@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        body {
+            background: hsl(225, 100%, 94%);
+        }
+        
+        #card {
+            max-width: 1440px;
+            width: 320px;
+            height: 490px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.97);
+            margin: auto;
+            margin-top: 8vh;
+            background: #ffffff;
+        }
+        
+        @media (max-width:650px) {
+            #card {
+                width: 300px;
+            }
+        }
+        
+        #image {
+            width: 100%;
+            height: 150px;
+            margin: auto;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        
+        #img {
+            width: 100%;
+            margin: auto;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        
+        #detail {
+            width: 100%;
+            height: 120px;
+        }
+        
+        #pricing {
+            background: RGBA(0, 0, 0, 0.03);
+            padding: 1.0em;
+            margin-top: 0px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        span {
+            font-weight: bold;
+        }
+        
+        #pricing p {
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+        
+        #detaila {
+            float: right;
+            text-decoration: none;
+            color: hsl(245, 75%, 52%);
+        }
+        
+        #detaila:hover {
+            color: hsl(240, 45%, 52%);
+        }
+        
+        #btn {
+            margin-bottom: 10px;
+            width: 70%;
+            height: 35px;
+            border-radius: 7px;
+            font-weight: bold;
+            background-color: hsl(245, 75%, 52%);
+            box-shadow: 0px 11px 9px 0px rgba(224, 232, 255, 0.53);
+            color: white;
+        }
+        
+        #btn:hover {
+            background-color: hsl(240, 45%, 52%);
+        }
+        
+        #carda {
+            text-decoration: none;
+            color: RGBA(0, 0, 0, 0.62);
+        }
+        
+        #carda:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="card">
+        <div id="image">
+            <img id="img" alt="orderImage" src="./images/illustration-hero.svg"> </div>
+        <div id="detail">
+            <h2>Order Summary</h2>
+            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+            </p>
+        </div>
+        <div id="pricing">
+            <img id="iconMusic" alt="iconMusic" src="./images/icon-music.svg">
+            <p><span>Annual Plan</span><br>$59.99/year</p>
+            <a id="detaila" href="#">change</a>
+        </div>
+
+        <button id="btn">proceed to payment</button><br>
+        <a id="carda" href="#" target="_blank">cancel order</a>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://codepen.io/08_mishra">Prashant</a>.
+    </div>
+</body>
+
+</html>
